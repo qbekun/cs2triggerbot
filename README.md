@@ -1,6 +1,6 @@
 <div align="center">
   <h1>CS2 Arduino Triggerbot </h1>
-  <p>Simple Counter-Strike 2 triggerbot in C++ with Arduino support and autoupdate offsets </p>
+  <p>Simple Counter-Strike 2 triggerbot in C++ with Arduino support and dynamic offsets </p>
 </div>
 
 ---
