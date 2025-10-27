@@ -144,7 +144,7 @@ void TriggerBot::run() {
             if (entityId > 0) {
                 uintptr_t entityList = game.read<uintptr_t>(clientBase + dwEntityList).value_or(0);
                 uintptr_t entry = game.read<uintptr_t>(entityList + 0x8 * (entityId >> 9) + 0x10).value_or(0);
-                uintptr_t entity = game.read<uintptr_t>(entry + 120 * (entityId & 0x1FF)).value_or(0);
+                uintptr_t entity = game.read<uintptr_t>(entry + 112 * (entityId & 0x1FF)).value_or(0);
 
                 if (entity) {
                     int targetHp = game.read<int>(entity + m_iHealth).value_or(0);
